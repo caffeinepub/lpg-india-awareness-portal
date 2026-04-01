@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Navy primary palette */
+    --navy: 0.22 0.058 252;
+    --navy-dark: 0.18 0.052 252;
+    --navy-light: 0.28 0.065 252;
+
+    /* Page backgrounds */
+    --background: 1 0 0;
+    --background-tint: 0.97 0.004 240;
+
+    /* Text */
+    --foreground: 0.15 0.01 260;
+    --muted-foreground: 0.52 0.012 260;
+
+    /* Cards */
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.01 260;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.01 260;
+
+    /* Orange accent */
+    --accent: 0.65 0.165 50;
+    --accent-foreground: 1 0 0;
+
+    /* Blue button */
+    --primary: 0.43 0.1 256;
+    --primary-foreground: 1 0 0;
+
+    /* Secondary */
+    --secondary: 0.97 0.004 240;
+    --secondary-foreground: 0.22 0.058 252;
+
+    /* Muted */
+    --muted: 0.97 0.004 240;
+
+    /* Destructive */
+    --destructive: 0.57 0.245 27;
+    --destructive-foreground: 1 0 0;
+
+    /* Borders */
+    --border: 0.92 0.005 240;
+    --input: 0.92 0.005 240;
+    --ring: 0.43 0.1 256;
+
+    /* Chart */
+    --chart-1: 0.65 0.165 50;
+    --chart-2: 0.43 0.1 256;
+    --chart-3: 0.55 0.13 170;
+    --chart-4: 0.7 0.15 85;
+    --chart-5: 0.6 0.18 30;
+
+    /* Sidebar */
+    --sidebar: 0.22 0.058 252;
+    --sidebar-foreground: 0.95 0.005 240;
+    --sidebar-primary: 0.65 0.165 50;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.28 0.065 252;
+    --sidebar-accent-foreground: 0.95 0.005 240;
+    --sidebar-border: 0.3 0.06 252;
+    --sidebar-ring: 0.65 0.165 50;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+}
